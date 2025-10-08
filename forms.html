@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form action="/lists.html" target="_blank" method="get" autocomplete="on" style="background:lightcyan">
+            <fieldset>
+                <legend>Personal Information</legend>
+            
+                <label for="fname">First Name:  </label>
+                <input type="text" id="fname" name="fname" required>
+                <br>
+                <label for="lname">Last Name:  </label>
+                <input type="text" id="lname" name="lname">
+                <br>
+
+                <label for="username">Enter the username: </label>
+                <input type="text" id="username" name="user"><br>
+                <label for="pass">Enter your password: </label>
+                <input type="password" id="pass" name="pwd"><br>
+
+                <hr>
+
+                <label for="day">Enter form submission date: </label>
+                <input type="datetime-local" id="day" name="day">
+
+                <hr>
+
+                <label for="email">Enter your email: </label>
+                <input type="email" id="email" name="email">
+
+                <hr>
+
+                <label for="workstart">Enter your Experience start date:</label>
+                <input type="date" id="workstart" name="workstart" min="2020-01-05"><br>
+                <label for="workend">Enter the last you worked</label>
+                <input type="date" id="workend" name="worked" max="2025-05-05">
+
+                <hr>
+                
+                <label for="text">Tell us about yourself:</label><br>
+                <textarea name="self" id="text" cols="30" rows="10"></textarea>
+                
+                <hr>
+
+                <p>Choose your fav language</p>
+                <input type="radio" id="fav_lang" name="fav_lang" value="html">
+                <label for="fav_lang">html</label><br>
+
+                <input type="radio" id="fav_lang" name="fav_lang" value="c++">
+                <label for="fav_lang">c++</label><br>
+
+                <hr>
+
+                <p>Choose your fav car</p>
+                
+                <input type="checkbox" id="car" name="car" value="porsche">
+                <label for="car">porsche</label><br>
+                
+                <input type="checkbox" id="car" name="car" value="ferrari">
+                <label for="car">ferrari</label><br>
+
+                <hr>
+
+                <label for="games">Choose fac game: </label>
+                <select name="khilone" id="games">
+                    <option value="BGMI">BGMI</option>
+                    <option value="valorant">valorant</option>
+                    <option value="MK11" selected>MK11</option>
+                    <option value="Csgo">Csgo</option>
+                </select><br>
+
+                <hr>
+
+                <label for="country">Choose country: </label>
+                <input list="country" name="country">
+                <datalist id="country">
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="America">America</option>
+                </datalist>
+
+                <hr>
+                <label for="checking">Did you liked this page: </label>
+                <input type="range" id="checking" min="0" max="100" name="checking">
+                <hr>
+
+                <button type="button" onclick="alert('Form is Submitted')"><input type="submit" value="Submit"></button>
+                <button type="button" onclick="alert('The values are removed !')"><input type="reset" value="Reset"></button>
+            </fieldset>
+        </form>
+        <br><br><br>
+        <form>
+            <fieldset>
+                <legend>Other form input options are:</legend>
+                <ul style="list-style-type:square">
+                    <li>type="search"</li>
+                    <li>type="month"</li>
+                    <li>type="number"</li>
+                    <li>type="time"</li>
+                    <li>type="url"</li>
+                    <li>type="file" and has a multiple attribute</li>
+                </ul>
+            </fieldset>
+        </form>
+    </body>
+</html>

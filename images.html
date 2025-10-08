@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealing with images</title>
+    </head>
+    <body>
+        <img src="test.jpeg" alt="test image" >
+        <hr>
+        <img src="test.jpeg" alt="test image" height="300px" width="300px">
+        <hr>
+        <img src="test.jpeg" alt="test image" style="height:300px;width:300px" usemap="#test">
+
+        <map name="test">
+            <area shape="circle" coords="150, 150, 150" href="https://www.google.com">
+        </map>
+
+        <hr>
+        <h3>Now Background images</h3>
+        <p style="color:black;background-image: url('test.jpeg');background-repeat:no-repeat">this is a text<br> you should see correctly <br>and my name is tanishq <br>what is your name<br> this is for the<br> IWP exam.</p>
+
+        <hr>
+        <h3>Picture element</h3>
+        <picture>
+            <source media="(min-width:400px)" srcset="test.jpeg">
+            <source media="(min-width:200px)" srcset="Alphabets.jpeg">
+            <img src="new.gif" alt="something is there">
+        </picture>
+
+    </body>
+</html>

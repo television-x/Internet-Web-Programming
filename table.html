@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* leave the table out of the this and only cell blocks will be rounded */
+            table,th,td{
+                border: 1px ridge black;
+                /* dotted, double groove ridge */
+                /* border-collapse:collapse; */
+                border-radius: 0%;
+            }
+            th, td{
+                /* background-color: #96df96; */
+                /* border-radius: 10px; */
+                /* text-align: center; */
+                text-align: left;
+            } 
+            /* th{
+                text-align: left;
+            }
+
+            td{
+                text-align:center;
+            } */
+
+            tr:hover{background-color: red;}
+
+            tr:nth-child(even){
+                background-color: rgba(150,212,212,0.4);
+            }
+            th:nth-child(even){
+                background-color: rgba(150,212,212,0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width:100%;">
+            <caption>
+                People Data
+            </caption>
+            <tr>
+                <th style="width: 50%;">name</th>
+                <th>age</th>
+                <th>country</th>
+            </tr>
+            <tr style="height:200px">
+                <td>tanishq</td>
+                <td>20</td>
+                <td rowspan="2">india</td>
+            </tr>
+            <tr>
+                <td>rahul</td>
+                <td>18</td>
+                <!-- <td>india</td> -->
+            </tr>
+            <tr>
+                <td>issac</td>
+                <td>20</td>
+                <td rowspan="2">america</td>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td>18</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+
+<br><br><br><br><br>
+if you want to adjust the height and width of the table 
+according to percentage then define it first in the table tag
+then use in tr or th tag with %
+else directly use px
+
+and for height in table tag use px
